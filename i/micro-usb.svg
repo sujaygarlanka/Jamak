@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.46 793.21">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-width:14px;}.cls-2{fill:#000000;}</style>
+    </defs>
+    <title>micro-usb</title>
+    <rect class="cls-1" x="7" y="119.19" width="233.46" height="368.12" rx="12" ry="12" />
+    <path class="cls-1" d="M60.73,7h126a12,12,0,0,1,12,12V119.19a0,0,0,0,1,0,0h-150a0,0,0,0,1,0,0V19A12,12,0,0,1,60.73,7Z" />
+    <path class="cls-1" d="M53.51,487.31H193.95a0,0,0,0,1,0,0v77.44a12,12,0,0,1-12,12H65.51a12,12,0,0,1-12-12V487.31A0,0,0,0,1,53.51,487.31Z" />
+    <line class="cls-1" x1="86.56" y1="576.75" x2="86.56" y2="793.21" />
+    <line class="cls-1" x1="164.25" y1="576.75" x2="164.25" y2="793.21" />
+    <path class="cls-2" d="M764.4,400v38.86c0,3.22,5,3.22,5,0V400c0-3.22-5-3.22-5,0Z" transform="translate(-609.67 -358.7)" />
+    <path class="cls-2" d="M701,401v38.86c0,3.22,5,3.22,5,0V401c0-3.22-5-3.22-5,0Z" transform="translate(-609.67 -358.7)" />
+</svg>
