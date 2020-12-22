@@ -31,7 +31,7 @@ Laptop Parts:
 | Trackpad                          | $11.91        | https://www.ebay.com/itm/HP-Pavilion-DV9000-Series-Touchpad-Board-W-Cable-and-Bezel-920-000702-04-/293050263588?pageci=6d339694-2ca5-4785-8b37-22b8872938a7
 |Electronics Total                  | $170.50       |
 
-### Physical Casing
+## Physical Casing
 | Item                              | Cost          | Link                                                                                          |
 |-----------------------------------|---------------|-----------------------------------------------------------------------------------------------|
 | 1/16 inch clear acrylic           | $16.85        | https://www.mcmaster.com/catalog/126/3823/                                                    |
