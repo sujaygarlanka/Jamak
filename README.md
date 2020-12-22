@@ -19,7 +19,7 @@ Below is a simple diagram illustrating the connections between the electronic co
 
 Below is a diagram illustrating the flow of the data between main components. The data in our design flows from the trackpad and keyboard to the phone to control it via USB-B protocol and from the phone to the LCD screen via Miracast wireless protocol. Using USB-B and Miracast allows us to support multiple phone brands, microUSB, and multiple Android versions.
 
-<img src="./logos/data-schematic.png" width="600">
+<img src="./logos/data-schematic.png" width="700">
 
 ### Parts
 Test Phone:
