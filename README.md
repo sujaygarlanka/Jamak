@@ -12,6 +12,9 @@ View more information at [jamak.cc](http://jamak.cc/).
 ## Electronics
 
 ### Design
+![laptop-schematic](./logos/laptop-schematic.png)
+
+![laptop-data-schematic](./logos/laptop-data-schematic.png)
 
 ### Parts
 Test Phone:
