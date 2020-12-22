@@ -1,3 +1,3 @@
-# Jamak.ai
+# Jamak
 
 Website branch
