@@ -1,5 +1,7 @@
 # Jamak
 
+A low cost laptop shell powered by a smartphone to provide a laptop experience for around $70.
+
 View more information at [jamak.cc](http://jamak.cc/).
 
 
