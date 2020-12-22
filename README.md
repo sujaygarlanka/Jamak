@@ -17,7 +17,7 @@ Test Phone:
 |-----------------------------------|---------------|-----------------------------------------------------------------------------------------------|
 | Xiaomi Redmi 9A                   | $120.29       | https://www.amazon.com/gp/product/B08CH5JY5D/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1 | 
 
-Electronics 
+Laptop Parts: 
 | Item                              | Cost          | Link                                                                                          |
 |-----------------------------------|---------------|-----------------------------------------------------------------------------------------------|
 | N116BGE-EA2 Screen                | $44.94        | https://www.amazon.com/gp/product/B00JPJI7B6/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1 |
@@ -32,4 +32,9 @@ Electronics
 |Electronics Total                  | $170.50       |
 
 ### Physical Casing
-- All schematics for laser cutting can be found in the jamak-parts.rld file above.
+| Item                              | Cost          | Link                                                                                          |
+|-----------------------------------|---------------|-----------------------------------------------------------------------------------------------|
+| 1/16 inch clear acrylic           | $16.85        | https://www.mcmaster.com/catalog/126/3823/                                                    |
+| Silver spray paint (if desired)   | x             | anywhere
+
+All schematics for laser cutting the acrylic can be found in the jamak-parts.rld file above.
