@@ -28,6 +28,10 @@
 </head>
 <!-- Custom style -->
 <style>
+	body {
+		background-color: #212224;
+	}
+
 	.logo-color {
 		filter: invert(81%) sepia(69%) saturate(531%) hue-rotate(91deg) brightness(84%) contrast(90%);
 	}
@@ -35,126 +39,184 @@
 	.border-color {
 		border-color: #21ce99 !important;
 	}
+
+	#logo-page {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #121212;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#main-page {
+		display: none;
+	}
+
+	.path {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: dash 2s linear forwards;
+	}
+
+	@keyframes dash {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
 </style>
 
 <body>
-	<!-- Navigation Mobile type 1 -->
-	<a href="#" class="open_menu bg-light radius_full">
-		<i class="fas fa-bars lh-40">
-		</i>
-	</a>
-	<div class="navigation_mobile bg-dark type1">
-		<a href="#" class="close_menu color-white">
-			<i class="fas fa-times">
+	<div id="logo-page">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="250"
+			height="188">
+			<g transform="matrix(0.2441406 0 0 0.2447917 0 0)">
+				<path class="path" transform="matrix(1.694728 0 0 1.694728 167.699 0)"
+					d="M328.95 291.74C 328.95 287.2223 327.3528 283.3662 324.1583 280.1717C 320.9638 276.9772 317.1077 275.38 312.59 275.38C 308.0723 275.38 304.2162 276.9772 301.0217 280.1717C 297.8272 283.3662 296.23 287.2223 296.23 291.74C 296.23 296.2577 297.8272 300.1138 301.0217 303.3083C 304.2162 306.5027 308.0723 308.1 312.59 308.1C 317.1077 308.1 320.9638 306.5027 324.1583 303.3083C 327.3528 300.1138 328.95 296.2577 328.95 291.74"
+					stroke="#FFFFFF" stroke-width="16" fill="none" />
+				<path class="path" transform="matrix(1.694728 0 0 1.694728 167.699 0)"
+					d="M347.61 76.66C 347.61 72.14232 346.0128 68.28622 342.8183 65.09174C 339.6238 61.89725 335.7677 60.30001 331.25 60.3C 326.7323 60.30001 322.8762 61.89725 319.6817 65.09174C 316.4872 68.28622 314.89 72.14232 314.89 76.66C 314.89 81.1777 316.4872 85.03378 319.6817 88.22827C 322.8762 91.42276 326.7323 93.02 331.25 93.02C 335.7677 93.02 339.6238 91.42276 342.8183 88.22827C 346.0128 85.03378 347.61 81.1777 347.61 76.66"
+					stroke="#FFFFFF" stroke-width="16" fill="none" />
+				<path class="path" transform="matrix(1.694728 0 0 1.694728 -1114.329 -521.4001)"
+					d="M1063 615.41L1049.13 654.09C 1026.76 718.1888 963.4505 758.672 895.8805 752.0857C 828.3105 745.4993 774.0109 693.5522 764.44 626.34L764.44 626.34L822.63 598.2499L841.63 588.95"
+					stroke="#FFFFFF" stroke-width="16" fill="none" />
+				<path class="path" transform="matrix(1.694728 0 0 1.694728 167.699 0)" d="M336.55 61.18L348.83 25.37"
+					stroke="#FFFFFF" stroke-width="16" fill="none" />
+				<path class="path" transform="matrix(1.694728 0 0 1.694728 167.699 0)"
+					d="M115.79 273.21C 115.79 268.6923 114.1928 264.8362 110.9983 261.6417C 107.8038 258.4472 103.9477 256.85 99.43 256.85C 94.91231 256.85 91.05622 258.4472 87.86173 261.6417C 84.66724 264.8362 83.07 268.6923 83.07 273.21C 83.07 277.7277 84.66724 281.5838 87.86173 284.7783C 91.05622 287.9728 94.91231 289.57 99.43 289.57C 103.9477 289.57 107.8038 287.9728 110.9983 284.7783C 114.1928 281.5838 115.79 277.7277 115.79 273.21"
+					stroke="#FFFFFF" stroke-width="16" fill="none" />
+				<path class="path" transform="matrix(1.694728 0 0 1.694728 -1114.329 -521.4001)"
+					d="M893.74 624.54C 901.558 634.1815 914.0092 638.7963 926.2225 636.5789C 938.4358 634.3615 948.47 625.6644 952.4 613.89L952.4 613.89L1042.56 350.89L1054.65 315.62L1082.42 325.14L1154.79 350L1074.37 583.92"
+					stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" fill="none" />
+				<path class="path" transform="matrix(1.694728 0 0 1.694728 -1114.329 -521.4001)"
+					d="M837 645.7C 849.0776 669.9439 870.8913 687.9111 897 695.12C 924.12 702.52 952.7 694.82 973.33 675.93C 984.4012 665.6985 992.9397 653.0311 998.27 638.93C 1028.09 555.03 1051.75 483 1082.43 399.82"
+					stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" fill="none" />
+			</g>
+		</svg>
+	</div>
+	<div id="main-page">
+		<!-- Navigation Mobile type 1 -->
+		<a href="#" class="open_menu bg-light radius_full">
+			<i class="fas fa-bars lh-40">
 			</i>
 		</a>
-		<div class="px-40 pt-60 pb-60 inner">
-			<div class="logo color-white mb-30">
-				<img src="i/jamak-logo-word.png" class="w-150 img-fluid" alt="">
-			</div>
-			<div>
-				<a href="#poc" class="f-heading f-22 link color-white mb-20">
-					POC
-				</a>
-			</div>
-			<div>
-				<a href="#purpose" class="f-heading f-22 link color-white mb-20">
-					Purpose
-				</a>
-			</div>
-			<div>
-				<a href="#progress" class="f-heading f-22 link color-white mb-20">
-					Progress
-				</a>
-			</div>
-			<div>
-				<a href="#about-us" class="f-heading f-22 link color-white mb-20">
-					About Us
-				</a>
-			</div>
-			<div>
-				<a href="#contact" class="f-heading f-22 link color-white mb-20">
-					Contact
-				</a>
+		<div class="navigation_mobile bg-dark type1">
+			<a href="#" class="close_menu color-white">
+				<i class="fas fa-times">
+				</i>
+			</a>
+			<div class="px-40 pt-60 pb-60 inner">
+				<div class="logo color-white mb-30">
+					<img src="i/jamak-logo-word.png" class="w-150 img-fluid" alt="">
+				</div>
+				<div>
+					<a href="#poc" class="f-heading f-22 link color-white mb-20">
+						POC
+					</a>
+				</div>
+				<div>
+					<a href="#purpose" class="f-heading f-22 link color-white mb-20">
+						Purpose
+					</a>
+				</div>
+				<div>
+					<a href="#progress" class="f-heading f-22 link color-white mb-20">
+						Progress
+					</a>
+				</div>
+				<div>
+					<a href="#about-us" class="f-heading f-22 link color-white mb-20">
+						About Us
+					</a>
+				</div>
+				<div>
+					<a href="#contact" class="f-heading f-22 link color-white mb-20">
+						Contact
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Header 5 -->
-	<header class="pt-160 pb-60 bg-light header_5">
-		<nav class="header_menu_5 pt-35 pb-35">
-			<div class="container px-xl-0">
-				<div class="row align-items-baseline">
-					<div class="col-lg-3" data-aos="fade-down" data-aos-delay="500">
-						<div class="logo">
-							<img src="i/jamak-logo-word.png" class="w-150 img-fluid" alt="">
+		<!-- Header 5 -->
+		<header class="pt-160 pb-60 bg-light header_5">
+			<nav class="header_menu_5 pt-35 pb-35">
+				<div class="container px-xl-0">
+					<div class="row align-items-baseline">
+						<div class="col-lg-3" data-aos="fade-down" data-aos-delay="500">
+							<div class="logo">
+								<img src="i/jamak-logo-word.png" class="w-150 img-fluid" alt="">
+							</div>
+						</div>
+						<div class="col-lg-9 d-flex justify-content-end align-items-center f-18 medium"
+							data-aos="fade-down" data-aos-delay="500">
+							<a href="#poc" class="link mx-15 color-main">
+								POC
+							</a>
+							<a href="#purpose" class="link color-main mx-15">
+								Purpose
+							</a>
+							<a href="#progress" class="link color-main mx-15">
+								Progress
+							</a>
+							<a href="#about-us" class="link color-main mx-15">
+								About Us
+							</a>
+							<a href="#contact" class="btn ml-15 sm color-main border-action-1">
+								Contact
+							</a>
 						</div>
 					</div>
-					<div class="col-lg-9 d-flex justify-content-end align-items-center f-18 medium" data-aos="fade-down"
-						data-aos-delay="500">
-						<a href="#poc" class="link mx-15 color-main">
-							POC
-						</a>
-						<a href="#purpose" class="link color-main mx-15">
-							Purpose
-						</a>
-						<a href="#progress" class="link color-main mx-15">
-							Progress
-						</a>
-						<a href="#about-us" class="link color-main mx-15">
-							About Us
-						</a>
-						<a href="#contact" class="btn ml-15 sm color-main border-action-1">
-							Contact
-						</a>
+				</div>
+			</nav>
+			<div id="poc" class="text-center container px-xl-0">
+				<div class="row justify-content-center">
+					<div class="col-lg-8" data-aos="fade-down" data-aos-delay="0">
+						<div class="mb-3 logo d-block d-xl-none text-center logo_mobile" data-aos="fade-down"
+							data-aos-delay="0">
+							<img src="i/jamak-logo-word.png" class="w-150 img-fluid" alt="">
+						</div>
+						<h3>
+							A $70 laptop for everyone, everywhere
+						</h3>
+					</div>
+					<div class="col-lg-6" data-aos="fade-down" data-aos-delay="250">
+						<div class="mt-50 relative poster" data-aos="fade-down" data-aos-delay="250">
+							<img src="i/laptop-shell-4.png" alt="" class="ml-35 img-fluid radius10">
+							<a href="https://www.youtube.com/watch?v=m0lCI39_J2Y&feature=youtu.be"
+								class="play btn border-white" data-fancybox="header_4_fancybox">
+								<i class="fas fa-play color-white">
+								</i>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</nav>
-		<div id="poc" class="text-center container px-xl-0">
-			<div class="row justify-content-center">
-				<div class="col-lg-8" data-aos="fade-down" data-aos-delay="0">
-					<div class="mb-3 logo d-block d-xl-none text-center logo_mobile" data-aos="fade-down"
+				<div class="row f-18 color-heading medium">
+					<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block" data-aos="fade-down"
 						data-aos-delay="0">
-						<img src="i/jamak-logo-word.png" class="w-150 img-fluid" alt="">
+						<div class="mx-auto mw-320">
+							All processing and storage done on your smartphone
+						</div>
 					</div>
-					<h3>
-						A $70 laptop for everyone, everywhere
-					</h3>
-				</div>
-				<div class="col-lg-6" data-aos="fade-down" data-aos-delay="250">
-					<div class="mt-50 relative poster" data-aos="fade-down" data-aos-delay="250">
-						<img src="i/laptop-shell-4.png" alt="" class="ml-35 img-fluid radius10">
-						<a href="https://www.youtube.com/watch?v=m0lCI39_J2Y&feature=youtu.be"
-							class="play btn border-white" data-fancybox="header_4_fancybox">
-							<i class="fas fa-play color-white">
-							</i>
-						</a>
+					<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block block_with_border"
+						data-aos="fade-down" data-aos-delay="250">
+						<div class="mx-auto mw-320">
+							Use existing apps in tablet mode for a great experience
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row f-18 color-heading medium">
-				<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block" data-aos="fade-down"
-					data-aos-delay="0">
-					<div class="mx-auto mw-320">
-						All processing and storage done on your smartphone
-					</div>
-				</div>
-				<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block block_with_border" data-aos="fade-down"
-					data-aos-delay="250">
-					<div class="mx-auto mw-320">
-						Use existing apps in tablet mode for a great experience
-					</div>
-				</div>
-				<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block" data-aos="fade-down"
-					data-aos-delay="500">
-					<div class="mx-auto mw-320">
-						New phone = New laptop
+					<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block" data-aos="fade-down"
+						data-aos-delay="500">
+						<div class="mx-auto mw-320">
+							New phone = New laptop
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- Content 17 -->
+		</header>
+		<!-- Content 17 -->
 		<section id="purpose" class="pt-100 pb-100 bg-dark color-filter-dark-8 content_17">
 			<div class="container px-xl-0">
 				<div class="row justify-content-center">
@@ -163,18 +225,38 @@
 							Purpose
 						</h2>
 						<div class="mt-25 mb-25 f-22 action-1 op-7 text-adaptive description" data-aos="fade-down"
-						data-aos-delay="250">
-						Turn your smartphone into a laptop for an affordable price.
-					</div>
-						<div class="row flex-md-row-reverse justify-content-md-end">
-							<div class="col-lg-6 col-md-6 bg-light radius20 pt-30 pb-30 px-30 mx-15 mx-sm-0 block_tip" data-aos="fade-down" data-aos-delay="0">
-								<div class="action-2 f-15 text-adaptive">
-										We believe we can help these students along with others by leveraging the power of their smartphones to create a laptop experience for under $100. We can do this by providing a laptop shell that scales and mirrors the content of the smartphone. So anything that can be done on a smartphone can be done on our device. Turn your smartphone into a laptop for an affordable price.
+							data-aos-delay="250">
+							Turn your smartphone into a laptop for an affordable price.
+						</div>
+						<div class="row flex-md-row justify-content-md-end">
+							<div class="col-lg-6 col-md-6 color-white mt-4 mt-lg-0">
+								<div class="mt-15 f-15 medium op-7 text-adaptive" data-aos="fade-down"
+									data-aos-delay="500">
+									Through a non-profit that provides scholarship money to low-income engineering
+									students
+									in India, we noticed a barrier in their education. When asked if they needed
+									additional
+									money outside of the scholarship, most responded by saying a laptop would be far
+									more
+									useful to them than money. They were doing all their school work on their
+									smartphones -
+									zoom classes, reading textbooks, submitting homework, all things meant to be done on
+									a
+									laptop, not a smartphone.
 								</div>
 							</div>
-							<div class="col-lg-6 color-white mt-4 mt-lg-0">
-								<div class="mt-15 f-15 medium op-7 text-adaptive" data-aos="fade-down" data-aos-delay="500">
-									Through a non-profit that provides scholarship money to low-income engineering students in India, we noticed a barrier in their education. When asked if they needed additional money outside of the scholarship, most responded by saying a laptop would be far more useful to them than money. They were doing all their school work on their smartphones - zoom classes, reading textbooks, submitting homework, all things meant to be done on a laptop, not a smartphone.
+							<div class="col-lg-6 col-md-6 bg-light radius20 pt-30 pb-30 px-30 mx-15 mx-sm-0 block_tip"
+								data-aos="fade-down" data-aos-delay="0">
+								<div class="action-2 f-15 text-adaptive">
+									We believe we can help these students along with others by leveraging the power of
+									their
+									smartphones to create a laptop experience for under $100. We can do this by
+									providing a
+									laptop shell that scales and mirrors the content of the smartphone. So anything that
+									can
+									be done on a smartphone can be done on our device. Turn your smartphone into a
+									laptop
+									for an affordable price.
 								</div>
 							</div>
 						</div>
@@ -182,235 +264,241 @@
 				</div>
 			</div>
 		</section>
-	<!-- Content 20 -->
-	<section id="progress" class="pt-100 pb-100 bg-light content_20">
-		<div class="container px-xl-0">
-			<div class="row justify-content-center">
-				<div class="col-xl-10 col-lg-11">
-					<h2 class="small" data-aos="fade-down" data-aos-delay="0">
-						Progress
-					</h2>
-					<div class="row">
-						<div class="mt-25 col-lg-12 inner">
-							<div class="pb-50 relative block">
-								<div class="content_20_line">
-								</div>
-								<div
-									class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
-									1
-								</div>
-								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
-									<div class="f-heading f-18 medium">
-										Idea
-										<span class="color-heading">
-											-
-										</span>
-										<span class="action-1">
-											November 8th
-										</span>
+		<!-- Content 20 -->
+		<section id="progress" class="pt-100 pb-100 bg-light content_20">
+			<div class="container px-xl-0">
+				<div class="row justify-content-center">
+					<div class="col-xl-10 col-lg-11">
+						<h2 class="small" data-aos="fade-down" data-aos-delay="0">
+							Progress
+						</h2>
+						<div class="row">
+							<div class="mt-25 col-lg-12 inner">
+								<div class="pb-50 relative block">
+									<div class="content_20_line">
 									</div>
-									<div class="mt-20 color-heading text-adaptive">
-										We realized we could turn a smartphone into a laptop for far less than a laptop costs by providing a laptop shell with some simple software to integrate with the phone. We began with a goal of
-										creating one for around <span class="action-1">$70<span>.
+									<div
+										class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
+										1
 									</div>
-								</div>
-							</div>
-							<div class="pb-50 relative block">
-								<div class="content_20_line">
-								</div>
-								<div
-									class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
-									2
-								</div>
-								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
-									<div class="f-heading f-18 medium">
-										User Research
-										<span class="color-heading">
-											-
-										</span>
-										<span class="action-1">
-											November 9 - 13th
-										</span>
-									</div>
-									<br>
-									<div class="color-heading text-adaptive">
-										<div>
-											We did some preliminary research by polling lower-income engineering college
-											students on the details of their phones to inform our engineering design. A
-											summary of our research is in the table below.
-											We extracted three insights from this research:
+									<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
+										<div class="f-heading f-18 medium">
+											Idea
+											<span class="color-heading">
+												-
+											</span>
+											<span class="action-1">
+												November 8th
+											</span>
 										</div>
-										<section class="mt-50 bg-light text-center feature_1">
-											<div class="container px-xl-0">
-												<div class="row justify-content-center">
-													<div class="col-xl-10">
-														<div class="row justify-content-center">
-															<div class="col-md-4" data-aos="fade-down"
-																data-aos-delay="250">
-																<!-- <i class="fas fa-briefcase f-60 action-1">
+										<div class="mt-20 color-heading text-adaptive">
+											We realized we could turn a smartphone into a laptop for far less than a
+											laptop
+											costs by providing a laptop shell with some simple software to integrate
+											with
+											the phone. We began with a goal of
+											creating one for around <span class="action-1">$70<span>.
+										</div>
+									</div>
+								</div>
+								<div class="pb-50 relative block">
+									<div class="content_20_line">
+									</div>
+									<div
+										class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
+										2
+									</div>
+									<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
+										<div class="f-heading f-18 medium">
+											User Research
+											<span class="color-heading">
+												-
+											</span>
+											<span class="action-1">
+												November 9 - 13th
+											</span>
+										</div>
+										<br>
+										<div class="color-heading text-adaptive">
+											<div>
+												We did some preliminary research by polling lower-income engineering
+												college
+												students on the details of their phones to inform our engineering
+												design. A
+												summary of our research is in the table below.
+												We extracted three insights from this research:
+											</div>
+											<section class="mt-50 bg-light text-center feature_1">
+												<div class="container px-xl-0">
+													<div class="row justify-content-center">
+														<div class="col-xl-10">
+															<div class="row justify-content-center">
+																<div class="col-md-4" data-aos="fade-down"
+																	data-aos-delay="250">
+																	<!-- <i class="fas fa-briefcase f-60 action-1">
 																</i> -->
-																<img src="i/brand.svg" class="w-90 img-fluid logo-color"
-																	alt="">
-																<div class="mt-20 f-19 title">
-																	Support multiple phone brands
+																	<img src="i/brand.svg"
+																		class="w-90 img-fluid logo-color" alt="">
+																	<div class="mt-20 f-19 title">
+																		Support multiple phone brands
+																	</div>
 																</div>
-															</div>
-															<div class="col-md-4" data-aos="fade-down"
-																data-aos-delay="500">
-																<img src="i/micro-usb.svg"
-																	class="w-30 img-fluid logo-color" alt="">
-																<div class="mt-20 f-19 title">
-																	Support microUSB
+																<div class="col-md-4" data-aos="fade-down"
+																	data-aos-delay="500">
+																	<img src="i/micro-usb.svg"
+																		class="w-30 img-fluid logo-color" alt="">
+																	<div class="mt-20 f-19 title">
+																		Support microUSB
+																	</div>
 																</div>
-															</div>
-															<div class="col-md-4" data-aos="fade-down"
-																data-aos-delay="750">
-																<img src="i/android.svg"
-																	class="w-90 img-fluid logo-color" alt="">
-																<div class="mt-20 f-19 title">
-																	Support multiple Android versions
+																<div class="col-md-4" data-aos="fade-down"
+																	data-aos-delay="750">
+																	<img src="i/android.svg"
+																		class="w-90 img-fluid logo-color" alt="">
+																	<div class="mt-20 f-19 title">
+																		Support multiple Android versions
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-										</section>
-										<section class="bg-light content_32">
-											<div class="container px-xl-0">
-												<div class="row justify-content-center">
-													<div class="col-xl-10">
-														<div class="row justify-content-between no-gutters">
-															<div class="col-lg-12 f-12 left">
-																<div class="row justify-content-center no-gutters">
-																	<div class="col-sm-2 col-10 column text-center text-sm-left"
-																		data-aos="fade-down" data-aos-delay="250">
-																		<div
-																			class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
-																			Brand
+											</section>
+											<section class="bg-light content_32">
+												<div class="container px-xl-0">
+													<div class="row justify-content-center">
+														<div class="col-xl-10">
+															<div class="row justify-content-between no-gutters">
+																<div class="col-lg-12 f-12 left">
+																	<div class="row justify-content-center no-gutters">
+																		<div class="col-sm-2 col-10 column text-center text-sm-left"
+																			data-aos="fade-down" data-aos-delay="250">
+																			<div
+																				class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
+																				Brand
+																			</div>
+																			<div class="cell bordered action-1">
+																				Redmi
+																			</div>
+																			<div class="cell bordered action-1">
+																				Poco
+																			</div>
+																			<div class="cell bordered action-1">
+																				Samsung
+																			</div>
+																			<div class="cell bordered action-1">
+																				Realme
+																			</div>
+																			<div class="cell bordered action-1">
+																				Vivo
+																			</div>
+																			<div class="cell action-1">
+																				Other
+																			</div>
 																		</div>
-																		<div class="cell bordered action-1">
-																			Redmi
+																		<div class="col-sm-3 col-10 column text-center"
+																			data-aos="fade-down" data-aos-delay="250">
+																			<div
+																				class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
+																				Models
+																			</div>
+																			<div class="cell bordered">
+																				4, Y2
+																			</div>
+																			<div class="cell bordered">
+																				X3, M2, M2 Pro
+																			</div>
+																			<div class="cell bordered">
+																				J7 Prime, On7
+																			</div>
+																			<div class="cell bordered">
+																				6i, U1, 5s, C2 s
+																			</div>
+																			<div class="cell bordered">
+																				Y12s, Y12, Y15
+																			</div>
+																			<div class="cell">
+																				10.or 3, Moto G4 Plus, OnePlus 7T
+																			</div>
 																		</div>
-																		<div class="cell bordered action-1">
-																			Poco
+																		<div class="col-sm-2 col-10 column text-center"
+																			data-aos="fade-down" data-aos-delay="500">
+																			<div
+																				class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
+																				RAM (GB)
+																			</div>
+																			<div class="cell bordered action-1">
+																				3
+																			</div>
+																			<div class="cell bordered action-1">
+																				6
+																			</div>
+																			<div class="cell bordered action-1">
+																				2
+																			</div>
+																			<div class="cell bordered action-1">
+																				2 - 4
+																			</div>
+																			<div class="cell bordered action-1">
+																				3 - 4
+																			</div>
+																			<div class="cell action-1">
+																				2 - 8
+																			</div>
 																		</div>
-																		<div class="cell bordered action-1">
-																			Samsung
+																		<div class="col-sm-3 col-10 column text-center"
+																			data-aos="fade-down" data-aos-delay="500">
+																			<div
+																				class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
+																				Port
+																			</div>
+																			<div class="cell bordered">
+																				microUSB
+																			</div>
+																			<div class="cell bordered">
+																				USB C
+																			</div>
+																			<div class="cell bordered">
+																				microUSB
+																			</div>
+																			<div class="cell bordered">
+																				mostly microUSB
+																			</div>
+																			<div class="cell bordered">
+																				microUSB
+																			</div>
+																			<div class="cell">
+																				mostly microUSB
+																			</div>
 																		</div>
-																		<div class="cell bordered action-1">
-																			Realme
-																		</div>
-																		<div class="cell bordered action-1">
-																			Vivo
-																		</div>
-																		<div class="cell action-1">
-																			Other
-																		</div>
-																	</div>
-																	<div class="col-sm-3 col-10 column text-center"
-																		data-aos="fade-down" data-aos-delay="250">
-																		<div
-																			class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
-																			Models
-																		</div>
-																		<div class="cell bordered">
-																			4, Y2
-																		</div>
-																		<div class="cell bordered">
-																			X3, M2, M2 Pro
-																		</div>
-																		<div class="cell bordered">
-																			J7 Prime, On7
-																		</div>
-																		<div class="cell bordered">
-																			6i, U1, 5s, C2 s
-																		</div>
-																		<div class="cell bordered">
-																			Y12s, Y12, Y15
-																		</div>
-																		<div class="cell">
-																			10.or 3, Moto G4 Plus, OnePlus 7T
-																		</div>
-																	</div>
-																	<div class="col-sm-2 col-10 column text-center"
-																		data-aos="fade-down" data-aos-delay="500">
-																		<div
-																			class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
-																			RAM (GB)
-																		</div>
-																		<div class="cell bordered action-1">
-																			3
-																		</div>
-																		<div class="cell bordered action-1">
-																			6
-																		</div>
-																		<div class="cell bordered action-1">
-																			2
-																		</div>
-																		<div class="cell bordered action-1">
-																			2 - 4
-																		</div>
-																		<div class="cell bordered action-1">
-																			3 - 4
-																		</div>
-																		<div class="cell action-1">
-																			2 - 8
-																		</div>
-																	</div>
-																	<div class="col-sm-3 col-10 column text-center"
-																		data-aos="fade-down" data-aos-delay="500">
-																		<div
-																			class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
-																			Port
-																		</div>
-																		<div class="cell bordered">
-																			microUSB
-																		</div>
-																		<div class="cell bordered">
-																			USB C
-																		</div>
-																		<div class="cell bordered">
-																			microUSB
-																		</div>
-																		<div class="cell bordered">
-																			mostly microUSB
-																		</div>
-																		<div class="cell bordered">
-																			microUSB
-																		</div>
-																		<div class="cell">
-																			mostly microUSB
-																		</div>
-																	</div>
-																	<div class="col-sm-2 col-10 column text-center text-sm-right"
-																		data-aos="fade-down" data-aos-delay="500">
-																		<div
-																			class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
-																			Android OS
-																		</div>
-																		<div class="cell bordered action-1">
-																			7.1 - 9
-																		</div>
-																		<div class="cell bordered action-1">
-																			10
-																		</div>
-																		<div class="cell bordered action-1">
-																			6 - 9
-																		</div>
-																		<div class="cell bordered action-1">
-																			9 - 10
-																		</div>
-																		<div class="cell bordered action-1">
-																			9
-																		</div>
-																		<div class="cell action-1">
-																			7 - 10
+																		<div class="col-sm-2 col-10 column text-center text-sm-right"
+																			data-aos="fade-down" data-aos-delay="500">
+																			<div
+																				class="px-0 f-13 text-uppercase semibold sp-20 cell bordered">
+																				Android OS
+																			</div>
+																			<div class="cell bordered action-1">
+																				7.1 - 9
+																			</div>
+																			<div class="cell bordered action-1">
+																				10
+																			</div>
+																			<div class="cell bordered action-1">
+																				6 - 9
+																			</div>
+																			<div class="cell bordered action-1">
+																				9 - 10
+																			</div>
+																			<div class="cell bordered action-1">
+																				9
+																			</div>
+																			<div class="cell action-1">
+																				7 - 10
+																			</div>
 																		</div>
 																	</div>
 																</div>
-															</div>
-															<!-- <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end text-center text-lg-left"
+																<!-- <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end text-center text-lg-left"
 																data-aos="fade-down" data-aos-delay="750">
 																<div
 																	class="mt-65 mw-270 px-35 pt-35 pb-35 radius6 right">
@@ -428,6 +516,103 @@
 																	</a>
 																</div>
 															</div> -->
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div>
+								<div class="pb-50 relative block">
+									<div class="content_20_line">
+									</div>
+									<div
+										class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
+										3
+									</div>
+									<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
+										<div class="f-heading f-18 medium">
+											Electronics Design
+											<span class="color-heading">
+												-
+											</span>
+											<span class="action-1">
+												November 14th - December 4th
+											</span>
+										</div>
+										<img src="i/jamak-schematic.png" class="mt-50 w-500 img-fluid" alt="">
+										<div class="mt-20 color-heading text-adaptive">
+											Based on our research, we put together a simple design illustrated above.
+										</div>
+										<img src="i/jamak-data-schematic.png" class="mt-50 w-full img-fluid" alt="">
+										<div class="mt-20 color-heading text-adaptive">
+											The data in our design flows from the trackpad and keyboard to the phone to
+											control it via <span class="color-red">USB-B</span> protocol and from the
+											phone
+											to the LCD screen via <span class="action-1">Miracast</span> wireless
+											protocol.
+											Using <span class="color-red">USB-B</span> and <span
+												class="action-1">Miracast</span> allows us to support multiple phone
+											brands,
+											microUSB, and multiple Android versions.
+										</div>
+									</div>
+								</div>
+								<div class="pb-50 relative block">
+									<div class="content_20_line">
+									</div>
+									<div
+										class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
+										4
+									</div>
+									<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
+										<div class="f-heading f-18 medium">
+											Physical Design
+											<span class="color-heading">
+												-
+											</span>
+											<span class="action-1">
+												December 5th - 20th
+											</span>
+										</div>
+										<div class="mt-20 color-heading text-adaptive">
+											We built the physical casing from scratch by joining a local <a
+												href="https://www.nova-labs.org/">Makerspace</a> and using a combination
+											of
+											laser cutting, screws, glue and spray paint to put together our POC. A small
+											selection from our many design iterations is shown below.
+										</div>
+										<section class="mt-50 bg-light text-center feature_1">
+											<div class="container px-xl-0">
+												<div class="row justify-content-center">
+													<div class="col-xl-10">
+														<div class="row justify-content-center">
+															<div class="col-md-4" data-aos="fade-down"
+																data-aos-delay="250">
+																<p class="f-20">V1</p>
+																<img src="i/v1-full.png" class="w-170 img-fluid" alt="">
+																<div class="mt-20 f-19 title color-heading">
+																	1/4 inch acrylic plastic with slotted keyboard
+																</div>
+															</div>
+															<div class="col-md-4" data-aos="fade-down"
+																data-aos-delay="500">
+																<p class="f-20">V2</p>
+																<img src="i/v2-full.png" class="w-170 img-fluid" alt="">
+																<div class="mt-20 f-19 title color-heading">
+																	1/8 inch MDF with embedded keyboard
+																</div>
+															</div>
+															<div class="col-md-4" data-aos="fade-down"
+																data-aos-delay="750">
+																<p class="f-20">POC</p>
+																<img src="i/poc-full.png" class="w-200 img-fluid"
+																	alt="">
+																<div class="mt-35 f-19 title color-heading">
+																	1/16 inch acrylic plastic with embedded keyboard
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -435,173 +620,99 @@
 										</section>
 									</div>
 								</div>
-							</div>
-							<div class="pb-50 relative block">
-								<div class="content_20_line">
-								</div>
-								<div
-									class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
-									3
-								</div>
-								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
-									<div class="f-heading f-18 medium">
-										Electronics Design
-										<span class="color-heading">
-											-
-										</span>
-										<span class="action-1">
-											November 14th - December 4th
-										</span>
+								<div class="pb-50 relative block">
+									<div class="content_20_line">
 									</div>
-									<img src="i/jamak-schematic.png" class="mt-50 w-500 img-fluid" alt="">
-									<div class="mt-20 color-heading text-adaptive">
-											Based on our research, we put together a simple design illustrated above.
+									<div
+										class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
+										5
 									</div>
-									<img src="i/jamak-data-schematic.png" class="mt-50 w-full img-fluid" alt="">
-									<div class="mt-20 color-heading text-adaptive">
-										The data in our design flows from the trackpad and keyboard to the phone to control it via <span class="color-red">USB-B</span> protocol and from the phone to the LCD screen via <span class="action-1">Miracast</span> wireless protocol.
-										Using <span class="color-red">USB-B</span> and <span class="action-1">Miracast</span> allows us to support multiple phone brands, microUSB, and multiple Android versions.
-								</div>
-								</div>
-							</div>
-							<div class="pb-50 relative block">
-								<div class="content_20_line">
-								</div>
-								<div
-									class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
-									4
-								</div>
-								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
-									<div class="f-heading f-18 medium">
-										Physical Design
-										<span class="color-heading">
-											-
-										</span>
-										<span class="action-1">
-											December 5th - 20th
-										</span>
+									<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
+										<div class="f-heading f-18 medium">
+											Software Design
+											<span class="color-heading">
+												-
+											</span>
+											<span class="action-1">
+												December 20th - Today
+											</span>
+										</div>
+										<div class="mt-20 color-heading text-adaptive">
+											We are currently building a Android simple app to configure the phone
+											settings
+											which setting the phone to tablet mode, connecting to the display and having
+											the
+											mirrored phone screen adjust to the aspect ratio of the LCD screen.
+										</div>
 									</div>
-									<div class="mt-20 color-heading text-adaptive">
-										We built the physical casing from scratch by joining a local <a href="https://www.nova-labs.org/">Makerspace</a> and using a combination of laser cutting, screws, glue and spray paint to put together our POC. A small selection from our many design iterations is shown below.
+								</div>
+								<div class="relative block">
+									<div
+										class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
+										6
 									</div>
-									<section class="mt-50 bg-light text-center feature_1">
-										<div class="container px-xl-0">
-											<div class="row justify-content-center">
-												<div class="col-xl-10">
-													<div class="row justify-content-center">
-														<div class="col-md-4" data-aos="fade-down"
-															data-aos-delay="250">
-															<p class="f-20">V1</p>
-															<img src="i/v1-full.png" class="w-170 img-fluid"
-																alt="">
-															<div class="mt-20 f-19 title color-heading">
-																1/4 inch acrylic plastic with slotted keyboard
+									<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
+										<div class="f-heading f-18 medium">
+											Next Steps
+											<span class="color-heading">
+												-
+											</span>
+											<span class="action-1">
+												To Infinity and Beyond
+											</span>
+										</div>
+										<div class="mt-20 color-heading text-adaptive">
+											If you are interested in helping us take the next steps shown below to help
+											us
+											on our journey to manufacture and distribute these low-cost laptops or
+											interested to learn more, including viewing our private Github repo that
+											contains CAD files, part lists, software related to this project, feel free
+											to
+											<a href="#contact">contact us</a>!
+										</div>
+										<section class="mt-50 bg-light text-center feature_1">
+											<div class="container px-xl-0">
+												<div class="row justify-content-center">
+													<div class="col-xl-10">
+														<div class="row justify-content-center">
+															<div class="col-md-4" data-aos="fade-down"
+																data-aos-delay="250">
+																<p class="f-20">PCB design</p>
+																<img src="i/pcb.svg" class="w-90 img-fluid logo-color"
+																	alt="">
+																<div class="mt-20 f-19 title color-heading">
+																	Integrate our components on a single motherboard to
+																	reduce the cost to manufacture
+																</div>
 															</div>
-														</div>
-														<div class="col-md-4" data-aos="fade-down"
-															data-aos-delay="500">
-															<p class="f-20">V2</p>
-															<img src="i/v2-full.png"
-																class="w-170 img-fluid" alt="">
-															<div class="mt-20 f-19 title color-heading">
-																1/8 inch MDF with embedded keyboard
+															<div class="col-md-4" data-aos="fade-down"
+																data-aos-delay="500">
+																<p class="f-20">Physical design</p>
+																<img src="i/laptop.svg"
+																	class="w-90 img-fluid logo-color" alt="">
+																<div class="mt-20 f-19 title color-heading">
+																	Design casing that can be manufactured
+																</div>
 															</div>
-														</div>
-														<div class="col-md-4" data-aos="fade-down"
-															data-aos-delay="750">
-															<p class="f-20">POC</p>
-															<img src="i/poc-full.png"
-																class="w-200 img-fluid" alt="">
-															<div class="mt-35 f-19 title color-heading">
-																1/16 inch acrylic plastic with embedded keyboard
+															<div class="col-md-4" data-aos="fade-down"
+																data-aos-delay="750">
+																<p class="f-20">Software</p>
+																<img src="i/code.svg" class="w-75 img-fluid logo-color"
+																	alt="">
+																<div class="mt-35 f-19 title color-heading">
+																	Finish app to seemlessly configure the phone when
+																	plugged in
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
+										</section>
+										<div class="mt-20 color-heading row justify-content-center">
+											<a href="https://github.com/sujaygarlanka/Jamak"
+												class="btn border-action-1 md"><i class="fab fa-github"></i> Github</a>
 										</div>
-									</section>
-								</div>
-							</div>
-							<div class="pb-50 relative block">
-								<div class="content_20_line">
-								</div>
-								<div
-									class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
-									5
-								</div>
-								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
-									<div class="f-heading f-18 medium">
-										Software Design
-										<span class="color-heading">
-											-
-										</span>
-										<span class="action-1">
-											December 20th - Today
-										</span>
-									</div>
-									<div class="mt-20 color-heading text-adaptive">
-										We are currently building a Android simple app to configure the phone settings which setting the phone to tablet mode, connecting to the display and having the mirrored phone screen adjust to the aspect ratio of the LCD screen.
-									</div>
-								</div>
-							</div>
-							<div class="relative block">
-								<div
-									class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">
-									6
-								</div>
-								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
-									<div class="f-heading f-18 medium">
-										Next Steps
-										<span class="color-heading">
-											-
-										</span>
-										<span class="action-1">
-											To Infinity and Beyond
-										</span>
-									</div>
-									<div class="mt-20 color-heading text-adaptive">
-										If you are interested in helping us take the next steps shown below to help us on our journey to manufacture and distribute these low-cost laptops or interested to learn more, including viewing our private Github repo that contains CAD files, part lists, software related to this project, feel free to <a href="#contact">contact us</a>!
-									</div>
-									<section class="mt-50 bg-light text-center feature_1">
-										<div class="container px-xl-0">
-											<div class="row justify-content-center">
-												<div class="col-xl-10">
-													<div class="row justify-content-center">
-														<div class="col-md-4" data-aos="fade-down"
-															data-aos-delay="250">
-															<p class="f-20">PCB design</p>
-															<img src="i/pcb.svg" class="w-90 img-fluid logo-color"
-																alt="">
-															<div class="mt-20 f-19 title color-heading">
-																Integrate our components on a single motherboard to reduce the cost to manufacture
-															</div>
-														</div>
-														<div class="col-md-4" data-aos="fade-down"
-															data-aos-delay="500">
-															<p class="f-20">Physical design</p>
-															<img src="i/laptop.svg"
-																class="w-90 img-fluid logo-color" alt="">
-															<div class="mt-20 f-19 title color-heading">
-																Design casing that can be manufactured
-															</div>
-														</div>
-														<div class="col-md-4" data-aos="fade-down"
-															data-aos-delay="750">
-															<p class="f-20">Software</p>
-															<img src="i/code.svg"
-																class="w-75 img-fluid logo-color" alt="">
-															<div class="mt-35 f-19 title color-heading">
-																Finish app to seemlessly configure the phone when plugged in
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
-									<div class="mt-20 color-heading row justify-content-center">
-										<a href="https://github.com/sujaygarlanka/Jamak" class="btn border-action-1 md"><i class="fab fa-github"></i> Github</a>
 									</div>
 								</div>
 							</div>
@@ -609,144 +720,147 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- Team 1 -->
-	<section id="about-us" class="pt-100 pb-100 text-center team_1 bg-dark">
-		<div class="container px-xl-0">
-			<div class="row justify-content-center">
-				<div class="col-xl-8 col-lg-10">
-					<h2 class="mb-20 small" data-aos="fade-down" data-aos-delay="0">
-						About Us
-					</h2>
-					<div class="f-22 color-heading text-adaptive" data-aos="fade-down" data-aos-delay="250">
-						We are childhood friends who could constantly be found at each others' houses as long as we have
-						been alive. We got know each other because our mothers went to the same high school and college
-						in India and both decided to settle in Northern Virginia. Like them, we also went both went to
-						Duke University a year apart and are now excited embark on this adventure together!
-					</div>
-					<!-- <div data-aos="fade-down" data-aos-delay="500">
+		</section>
+		<!-- Team 1 -->
+		<section id="about-us" class="pt-100 pb-100 text-center team_1 bg-dark">
+			<div class="container px-xl-0">
+				<div class="row justify-content-center">
+					<div class="col-xl-8 col-lg-10">
+						<h2 class="mb-20 small" data-aos="fade-down" data-aos-delay="0">
+							About Us
+						</h2>
+						<div class="f-22 color-heading text-adaptive" data-aos="fade-down" data-aos-delay="250">
+							We are childhood friends who could constantly be found at each others' houses as long as we
+							have
+							been alive. We got know each other because our mothers went to the same high school and
+							college
+							in India and both decided to settle in Northern Virginia. Like them, we also both went
+							to
+							Duke University a year apart and are now excited embark on this adventure together!
+						</div>
+						<!-- <div data-aos="fade-down" data-aos-delay="500">
 										<a href="#" class="btn mt-45 border-gray color-main">
 											Enjoy Our Team
 										</a>
 									</div> -->
-				</div>
-			</div>
-			<div class="mt-20 row justify-content-center">
-				<div class="mt-60 col-lg-4 col-md-7 col-sm-10" data-aos="fade-down" data-aos-delay="0">
-					<div class="radius10 pt-50 block">
-						<img src="i/sujay-profile.jpg" alt="" class="w-150 h-150 radius_full">
-						<div class="mt-25 mb-15 f-22 title">
-							Sujay Garlanka
-						</div>
-						<div class="f-12 sp-20 color-heading">
-							BS, Electrical and Computer Engineering
-						</div>
-						<div class="f-12 sp-20 color-heading">
-							Minor in CS
-						</div>
-						<div class="f-14 semibold text-uppercase sp-20 action-1">
-							Software Engineer @ Box
-						</div>
-						<div class="mt-35 row no-gutters block_socials">
-							<div class="col-4 border_right">
-								<a href="https://www.linkedin.com/in/sujay-garlanka-bbb90222/"
-									class="link f-22 lh-60 color-heading" target="_blank">
-									<i class="fab fa-linkedin-in">
-									</i>
-								</a>
-							</div>
-							<div class="col-4">
-								<a href="https://sujaygarlanka.com/" class="link f-22 lh-60 color-heading"
-									target="_blank">
-									<i class="fas fa-laptop">
-									</i>
-								</a>
-							</div>
-							<div class="col-4 border_right">
-								<a href="https://github.com/sujaygarlanka" class="link f-22 lh-60 color-heading"
-									target="_blank">
-									<i class="fab fa-github">
-									</i>
-								</a>
-							</div>
-						</div>
 					</div>
 				</div>
-				<div class="mt-60 col-lg-4 col-md-7 col-sm-10" data-aos="fade-down" data-aos-delay="500">
-					<div class="radius10 pt-50 block">
-						<img src="i/vishal-profile.jpeg" alt="" class="w-150 h-150 radius_full">
-						<div class="mt-25 mb-15 f-22 title">
-							Vishal Mummareddy
-						</div>
-						<div class="f-12 sp-20 color-heading">
-							BS, Computer Science
-						</div>
-						<div class="f-12 sp-20 color-heading">
-							Minor in Math and Finance
-						</div>
-						<div class="f-14 semibold text-uppercase sp-20 action-1">
-							Strategy Analyst @ Accenture
-						</div>
-						<div class="mt-35 row no-gutters block_socials">
-							<div class="col-4 border_right">
-								<a href="https://www.linkedin.com/in/vishal-mummareddy/"
-									class="link f-22 lh-60 color-heading" target="_blank">
-									<i class="fab fa-linkedin-in">
-									</i>
-								</a>
+				<div class="mt-20 row justify-content-center">
+					<div class="mt-60 col-lg-4 col-md-7 col-sm-10" data-aos="fade-down" data-aos-delay="0">
+						<div class="radius10 pt-50 block">
+							<img src="i/sujay-profile.jpg" alt="" class="w-150 h-150 radius_full">
+							<div class="mt-25 mb-15 f-22 title">
+								Sujay Garlanka
 							</div>
-							<div class="col-4 border_right">
-								<a href="https://twitter.com/vishmum?lang=en" class="link f-22 lh-60 color-heading"
-									target="_blank">
-									<i class="fab fa-twitter">
-									</i>
-								</a>
+							<div class="f-12 sp-20 color-heading">
+								BS, Electrical and Computer Engineering
 							</div>
-							<div class="col-4">
-								<a href="https://www.instagram.com/vishmum/?hl=en" class="link f-22 lh-60 color-heading"
-									target="_blank">
-									<i class="fab fa-instagram">
-									</i>
-								</a>
+							<div class="f-12 sp-20 color-heading">
+								Minor in CS
+							</div>
+							<div class="f-14 semibold text-uppercase sp-20 action-1">
+								Software Engineer @ Box
+							</div>
+							<div class="mt-35 row no-gutters block_socials">
+								<div class="col-4 border_right">
+									<a href="https://www.linkedin.com/in/sujay-garlanka-bbb90222/"
+										class="link f-22 lh-60 color-heading" target="_blank">
+										<i class="fab fa-linkedin-in">
+										</i>
+									</a>
+								</div>
+								<div class="col-4">
+									<a href="https://sujaygarlanka.com/" class="link f-22 lh-60 color-heading"
+										target="_blank">
+										<i class="fas fa-laptop">
+										</i>
+									</a>
+								</div>
+								<div class="col-4 border_right">
+									<a href="https://github.com/sujaygarlanka" class="link f-22 lh-60 color-heading"
+										target="_blank">
+										<i class="fab fa-github">
+										</i>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Contact 9 -->
-	<section id="contact" class="pt-95 pb-80 bg-light relative color-white text-center contact_9">
-		<div class="container px-xl-0">
-			<div class="row justify-content-center">
-				<div class="col-xl-6 col-lg-7 col-md-8">
-					<h6 class="f-24 bold action-3" data-aos="fade-down" data-aos-delay="0">
-						Contact Us
-					</h6>
-					<div class="mt-20 mb-80 f-22 text-adaptive" data-aos="fade-down" data-aos-delay="250">
-						We'll get back to you by the end of the day!
-					</div>
-					<div data-aos="fade-down" data-aos-delay="0">
-						<div class="mb-10 f-14 semibold text-uppercase sp-20 title">
-							E-mail
+					<div class="mt-60 col-lg-4 col-md-7 col-sm-10" data-aos="fade-down" data-aos-delay="500">
+						<div class="radius10 pt-50 block">
+							<img src="i/vishal-profile.jpeg" alt="" class="w-150 h-150 radius_full">
+							<div class="mt-25 mb-15 f-22 title">
+								Vishal Mummareddy
+							</div>
+							<div class="f-12 sp-20 color-heading">
+								BS, Computer Science
+							</div>
+							<div class="f-12 sp-20 color-heading">
+								Minor in Math and Finance
+							</div>
+							<div class="f-14 semibold text-uppercase sp-20 action-1">
+								Strategy Analyst @ Accenture
+							</div>
+							<div class="mt-35 row no-gutters block_socials">
+								<div class="col-4 border_right">
+									<a href="https://www.linkedin.com/in/vishal-mummareddy/"
+										class="link f-22 lh-60 color-heading" target="_blank">
+										<i class="fab fa-linkedin-in">
+										</i>
+									</a>
+								</div>
+								<div class="col-4 border_right">
+									<a href="https://twitter.com/vishmum?lang=en" class="link f-22 lh-60 color-heading"
+										target="_blank">
+										<i class="fab fa-twitter">
+										</i>
+									</a>
+								</div>
+								<div class="col-4">
+									<a href="https://www.instagram.com/vishmum/?hl=en"
+										class="link f-22 lh-60 color-heading" target="_blank">
+										<i class="fab fa-instagram">
+										</i>
+									</a>
+								</div>
+							</div>
 						</div>
-						<a href="mailto:founders@jamak.cc" class="link mb-60 f-42 bold color-white text_big">
-							founders@jamak.cc
-						</a>
-					</div>
-					<div data-aos="fade-down" data-aos-delay="0">
-						<div class="mb-10 f-14 semibold text-uppercase sp-20 title">
-							Phone
-						</div>
-						<a href="tel:+703 939 7811" class="link mb-60 f-42 bold color-white text_big">
-							+1 703 939 7811
-						</a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+		<!-- Contact 9 -->
+		<section id="contact" class="pt-95 pb-80 bg-light relative color-white text-center contact_9">
+			<div class="container px-xl-0">
+				<div class="row justify-content-center">
+					<div class="col-xl-6 col-lg-7 col-md-8">
+						<h6 class="f-24 bold action-3" data-aos="fade-down" data-aos-delay="0">
+							Contact Us
+						</h6>
+						<div class="mt-20 mb-80 f-22 text-adaptive" data-aos="fade-down" data-aos-delay="250">
+							We'll get back to you by the end of the day!
+						</div>
+						<div data-aos="fade-down" data-aos-delay="0">
+							<div class="mb-10 f-14 semibold text-uppercase sp-20 title">
+								E-mail
+							</div>
+							<a href="mailto:founders@jamak.cc" class="link mb-60 f-42 bold color-white text_big">
+								founders@jamak.cc
+							</a>
+						</div>
+						<div data-aos="fade-down" data-aos-delay="0">
+							<div class="mb-10 f-14 semibold text-uppercase sp-20 title">
+								Phone
+							</div>
+							<a href="tel:+703 939 7811" class="link mb-60 f-42 bold color-white text_big">
+								+1 703 939 7811
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 	<!-- Bootstrap 4.5.2 JS -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 	<!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
