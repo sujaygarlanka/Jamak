@@ -1,6 +1,6 @@
 # Jamak
 
-A low cost laptop shell powered by a smartphone to provide a laptop experience for around $70.
+A low cost laptop shell powered by a smartphone to provide a laptop experience for under a $100.
 
 View more information at [jamak.cc](http://jamak.cc/).
 
@@ -17,7 +17,7 @@ Below is a simple diagram illustrating the connections between the electronic co
 
 <img src="./logos/electronics-schematic.png" width="600">
 
-Below is a diagram illustrating the flow of the data between main components. The data in our design flows from the trackpad and keyboard to the phone to control it via USB-B protocol and from the phone to the LCD screen via Miracast wireless protocol. Using USB-B and Miracast allows us to support multiple phone brands, microUSB, and multiple Android versions.
+Below is a diagram illustrating the flow of the data between main components. The data in our design flows from the trackpad and keyboard to the phone to control it via USB-A protocol and from the phone to the LCD screen via Miracast wireless protocol. Using USB-A and Miracast allows us to support multiple phone brands, microUSB, and multiple Android versions.
 
 <img src="./logos/data-schematic.png" width="700">
 
