@@ -48,3 +48,7 @@ Laptop Parts:
 | Silver spray paint (if desired)   | x             | anywhere
 
 All schematics for laser cutting the acrylic can be found in the [jamak-parts.rld](./jamak-parts.rld) file above.
+
+## Linux Scripts
+
+- For testing on mac, must install coreutils `brew install coreutils` and use `gdate` instead of `date`
