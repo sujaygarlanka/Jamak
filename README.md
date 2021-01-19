@@ -52,3 +52,5 @@ All schematics for laser cutting the acrylic can be found in the [jamak-parts.rl
 ## Linux Scripts
 
 - For testing on mac, must install coreutils `brew install coreutils` and use `gdate` instead of `date`
+
+- https://stackabuse.com/executing-shell-commands-with-python/
