@@ -63,7 +63,7 @@ while True:
 
             if action == "format":
                 print("format")
-                subprocess.run(["adb", "shell", "wm", "density", "240"], stdout=subprocess.PIPE, text=True).stdout
+                subprocess.run(["adb", "shell", "wm", "density", "180"], stdout=subprocess.PIPE, text=True).stdout
                 #subprocess.run(["adb", "shell", "wm", "size", "1020x1900"], stdout=subprocess.PIPE, text=True).stdout
                 subprocess.run(["adb", "shell", "content", "insert", "--uri","content://settings/system","--bind","name:s:user_rotation", "--bind value:i:1"], stdout=subprocess.PIPE, text=True).stdout
                 subprocess.run(["adb", "shell", "content", "insert", "--uri","content://settings/system","--bind","name:s:accelerometer_rotation", "--bind value:i:0"], stdout=subprocess.PIPE, text=True).stdout
