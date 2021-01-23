@@ -43,7 +43,7 @@ print("Searching...")
 while True:
     #print("*****")
     get_logs = subprocess.run(["adb", "logcat", "-d", "-v", "tag,time,year", "-t", date, "JamakApp:D", "*:S"], stdout=subprocess.PIPE, text=True).stdout
-    if (get_logs == "")
+
     #print("log " + get_logs + " " + date)
     time.sleep(.500)
     indexLogs = get_logs.splitlines()
