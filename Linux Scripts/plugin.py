@@ -43,6 +43,7 @@ print("Searching...")
 while True:
     #print("*****")
     get_logs = subprocess.run(["adb", "logcat", "-d", "-v", "tag,time,year", "-t", date, "JamakApp:D", "*:S"], stdout=subprocess.PIPE, text=True).stdout
+    if (get_logs == "")
     #print("log " + get_logs + " " + date)
     time.sleep(.500)
     indexLogs = get_logs.splitlines()
@@ -64,7 +65,7 @@ while True:
             if action == "format":
                 print("format")
                 subprocess.run(["adb", "shell", "wm", "density", "180"], stdout=subprocess.PIPE, text=True).stdout
-                #subprocess.run(["adb", "shell", "wm", "size", "1020x1900"], stdout=subprocess.PIPE, text=True).stdout
+                subprocess.run(["adb", "shell", "wm", "size", "1280x800"], stdout=subprocess.PIPE, text=True).stdout
                 subprocess.run(["adb", "shell", "content", "insert", "--uri","content://settings/system","--bind","name:s:user_rotation", "--bind value:i:1"], stdout=subprocess.PIPE, text=True).stdout
                 subprocess.run(["adb", "shell", "content", "insert", "--uri","content://settings/system","--bind","name:s:accelerometer_rotation", "--bind value:i:0"], stdout=subprocess.PIPE, text=True).stdout
 
